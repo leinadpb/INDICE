@@ -7,6 +7,7 @@ import {HomeScreen} from "./src/components/HomeScreen.js";
 import {AboutScreen} from "./src/components/AboutScreen.js";
 import {Start1} from "./src/components/Start1.js";
 import {Start2} from "./src/components/Start2.js";
+import {TestingLayout} from "./src/components/TestingLayout.js";
 
 import {styles} from './src/styles/headerBar.js'
 
@@ -37,14 +38,21 @@ const RootStack = createStackNavigator(
             navigationOptions:{
                 headerRight:null,
             }
+        },
+        TestLayout:{
+            screen:TestingLayout,
+            navigationOptions:{
+                title:"Testing Layout",
+                headerRight:null,
+            }
         }
     },
     {
         // Stack Navigator General Properties
-        initialRouteName: 'Start1',
+        initialRouteName: 'TestLayout',
         navigationOptions:{
             headerStyle:{
-                backgroundColor: '#3e70c1',
+                backgroundColor: '#03487D',
             },
             headerTintColor: '#fff',
             headerTitleStyle:{
